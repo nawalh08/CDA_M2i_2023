@@ -1,0 +1,47 @@
+body {
+    background-color: #fafaf9;
+    font-family: Sora ,sans-serif;
+    width: 1280px;
+}
+
+
+.card {
+    width: 400px;
+    height: 500px;
+    background-color:#fafaf9;
+    margin-left: 20%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px lightgray;
+    
+}
+.card img{
+    width: 90%;
+    height:40% ;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+button {
+    color: #883AE1;
+    padding: 12px 28px;
+    border-radius: 20px;
+    background-color: #e6d6fc;
+    border: #e6d6fc;
+    margin-left: 20px;
+    font-weight: 700;
+}
+h2 {
+    color: black;
+    font-size: 1.5rem;
+    margin-left: 20px;
+}
+.article p{
+    margin-left: 20px;
+    color: #6c727f;
+}
+.signature p{
+    color: #6c727f;
+    margin-left: 20px;
+    margin-top: 10px;
+   
+}
