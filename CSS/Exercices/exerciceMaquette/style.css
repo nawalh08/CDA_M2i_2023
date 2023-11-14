@@ -37,7 +37,7 @@ table {
 }
 
 th, td {
-    border: 1px solid blue;
+    border: 1px solid rgb(167, 130, 8);
     padding: 10px;
 }
 
@@ -47,7 +47,7 @@ td {
 }
 
 th {
-    background-color: blue;
+    background-color: rgb(146, 111, 34);
 }
 
 /*Page Contact*/ 
@@ -92,8 +92,10 @@ a:hover{
     font-size: 1.1rem;
     
 }
-
-
+.test-float::first-letter {
+    font-size: 40px;
+    float: left;
+}
 
 
 
