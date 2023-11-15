@@ -1,0 +1,96 @@
+*{
+    font-family:'Lucida Sans', sans-serif;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+/* La barre de navigation :  */
+
+.flex-nav{
+    display: flex;
+    background-color: rgb(108, 144, 221);
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.logo {
+    background-color: orange;
+    border-radius: 50%;
+    width: 80px;
+    margin-left: 40px;
+    margin-top: 10px;
+    }
+#link {
+    display: flex;
+    justify-content: space-between
+}
+a {
+    text-decoration: none;
+    background-color: orange;
+    border-radius: 30px;
+    color: white;
+   padding: 5px 10px ;
+   margin-right: 20px;
+   margin-bottom: 20px;
+   
+}
+#title{
+    margin-bottom: 30px;
+    margin-left: 100px;
+}
+
+/* Le contenu :  */
+
+#welcome {
+    margin-bottom: 20px;
+    text-decoration:underline;
+    font-size: 20px;
+    
+}
+.welcome-object{
+    margin-left: 10px;
+}
+#object {
+    font-weight: 400;
+    color: orange;
+    font-size: 20px;
+}
+#object:hover {
+   color: blue;
+}
+
+
+/* Les cards :  */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-gap: 20px;
+    margin-left: 30px;
+    
+    
+  }
+.card{
+    display: grid;
+    grid-template-rows: max-content 200px 1fr;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border: 1px solid orange;
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px gray;
+    border-radius: 5px;
+}  
+
+.picture:hover {
+    transform: scale(1.75);
+}
+
+.card .picture {
+    margin: 30px auto;
+}
+
+.content::first-letter {
+    font-weight: bold;
+}
+
+
+
