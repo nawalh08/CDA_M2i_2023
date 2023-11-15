@@ -54,5 +54,37 @@ footer {
    
 }
 
+/* Le responsive :  */
+
+@media screen and (max-width: 600px){
+    main{
+        display: flex;
+        flex-direction:column;
+    }
+
+    .columnA{
+        background-color: orange;
+        width: 100%;
+        align-items: stretch;
+        align-content: stretch;
+    }
+
+    .columnB{
+        background-color: rgb(39, 196, 46);
+        width: 100%;
+        align-items: stretch;
+        align-content: stretch;
+    }
+
+    .columnC{
+        background-color: rgb(67, 205, 230);
+        width: 100%;
+        align-items: stretch;
+        align-content: stretch;
+    }
+    
+};
+
+
 
 
