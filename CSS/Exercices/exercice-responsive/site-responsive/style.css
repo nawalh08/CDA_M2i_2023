@@ -1,7 +1,10 @@
-*{
+html, body {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: beige;
     font-family:'Lucida Sans', sans-serif;
-   margin: 0;
-   box-sizing: border-box;
 }
 
 /* La barre de navigation :  */
@@ -31,7 +34,11 @@ a {
    padding: 5px 10px ;
    margin-right: 20px;
    margin-bottom: 20px;
-   
+}
+a:hover {
+    transform: scale(1.2);
+    opacity: 0.2;
+    cursor:pointer;
 }
 #title{
     margin-bottom: 30px;
@@ -55,7 +62,7 @@ a {
     font-size: 20px;
 }
 #object:hover {
-   color: blue;
+   color: rgb(108, 144, 221);
 }
 
 
@@ -65,10 +72,8 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     grid-gap: 20px;
-    margin-left: 30px;
-    
-    
-  }
+    margin-left: 30px; 
+}
 .card{
     display: grid;
     grid-template-rows: max-content 200px 1fr;
@@ -81,16 +86,62 @@ a {
 }  
 
 .picture:hover {
-    transform: scale(1.75);
+    transform: scale(1.5);
 }
 
 .card .picture {
     margin: 30px auto;
+    border-radius: 10px;
+    background-color: beige;
 }
-
+.content {
+    margin-top: 10px;
+}
 .content::first-letter {
     font-weight: bold;
 }
+
+
+
+/* Footer :  */
+
+
+footer{
+    background-color: rgb(108, 144, 221);
+    height: 100px;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+li {
+    list-style-type: none;
+}
+
+
+
+/* Média query :  Responsive */
+
+@media screen and (max-width:575px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .logo {
+        overflow: hidden;
+        display: none;
+    }
+
+    #link {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 40px)
+    }
+
+
+}
+
 
 
 
