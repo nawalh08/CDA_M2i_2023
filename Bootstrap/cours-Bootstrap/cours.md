@@ -23,4 +23,6 @@
 5. Extra large **xl** `≥1200px`
 6. Extra extra large **xxl** `≥1400px`
 
-##
+## Creer un footer 
+
+Il existe une classe pour creer un footer qui prend toute la largeur, et cette classe met en forme directement le footer : `class:="page-footer"` à mettre directement dans la balise footer.

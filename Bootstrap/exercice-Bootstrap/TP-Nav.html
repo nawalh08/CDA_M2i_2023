@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white">
+            <div class="container-fluid">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                    <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                  </svg>
+                <a class="navbar-brand text-white" href="#">eLibrary</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Educatifs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Romans</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Comics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Magazines</a>
+                        </li>
+
+                    </ul>
+
+
+                    <form class="d-flex" role="search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                            <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                            <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+                          </svg>
+                          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Gestion
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Comics</a></li>
+                              <li><a class="dropdown-item" href="#">Magazines</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Romans</a></li>
+                            </ul>
+                          </li>
+                          </ul>
+                        <input class="form-control me-2" type="search" placeholder="Titre, Date, Auteur" aria-label="Search">
+                        <button class="btn btn-outline-light text-white" type="submit">Rechercher</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A iste officia quasi rerum excepturi? Aperiam quia voluptatibus quisquam, autem velit sit architecto numquam, aliquam repellat totam molestiae placeat, voluptas illo.
+        Veritatis adipisci vel neque molestiae quod assumenda ex illo, quibusdam accusantium error, sunt mollitia perspiciatis, veniam similique! Perspiciatis velit, consequuntur dicta et accusantium mollitia veniam ipsum nobis ex, iste aspernatur!
+        Eius nesciunt, facere totam at accusamus nulla ab! Alias recusandae, iste esse qui corrupti provident eum ad? Rerum molestiae aspernatur quos veniam veritatis quidem earum quibusdam optio! Quis, debitis veniam.
+        Reiciendis praesentium adipisci mollitia, perferendis ipsam pariatur in cumque quisquam nesciunt similique necessitatibus rerum odio facere officia eveniet accusantium fuga voluptate doloribus nostrum quidem consequatur! Eos fugit itaque recusandae temporibus.
+        Assumenda illo harum voluptatem minima repellat animi perspiciatis impedit ab ea officiis asperiores, in id quos inventore itaque temporibus? Dolorum quaerat quia inventore ex distinctio totam maxime corporis sunt consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odio quaerat iste error repellat, earum dicta? Adipisci vel iste laborum nesciunt in, dolorem laboriosam minima magni, facilis, quo assumenda quas?
+        Ab laborum voluptatibus delectus voluptates! Cumque, tenetur! Recusandae officia iste, voluptate distinctio natus culpa maxime, architecto tenetur, error magni quasi nihil sunt aspernatur veniam a eaque libero quisquam ad quaerat.
+        Blanditiis similique nisi possimus id modi, quod explicabo alias error omnis, natus suscipit. Numquam dolor eum, explicabo adipisci doloribus molestias velit rerum officia esse suscipit quae cum quas nam reiciendis.
+        Eaque consequuntur alias cum, dolor aspernatur cupiditate fugit ea eveniet ullam dicta ut quo facere error labore neque natus laborum autem placeat veniam quia saepe maxime explicabo fugiat. Necessitatibus, dolor?
+        Enim magnam corrupti libero laudantium excepturi possimus voluptate repudiandae voluptas nam quidem vel, saepe soluta autem velit labore, sapiente officia id. Tenetur minus distinctio a eaque eligendi officiis numquam consequuntur.
+        Dolorum blanditiis facilis in laborum aperiam sunt saepe, quod illum modi eligendi corrupti nisi. Obcaecati, repudiandae iusto, tempora aut corporis ipsum iure expedita deleniti optio est mollitia sunt rem laborum!
+        Accusantium placeat voluptas molestiae aliquam iusto, modi ad sit suscipit similique, quos asperiores excepturi quidem facere? Molestiae provident iste doloremque quis! Maxime ipsa minus vel, deleniti soluta cupiditate at vitae!
+        Laboriosam iure atque omnis fugiat excepturi dolor rerum? Labore voluptate commodi veniam magni natus quaerat! Reprehenderit adipisci quisquam vel, ab quidem consequuntur nemo perspiciatis accusamus quas error fugit porro est?
+        Et nesciunt fugit commodi officia nisi distinctio ea impedit. Rerum, nisi tempora dolores unde aperiam assumenda libero sunt magni! Itaque quas modi cumque repudiandae voluptatum sed, quisquam hic dicta vitae.
+        Consequatur quibusdam velit, cupiditate quos reprehenderit accusantium iure, sed corrupti aliquid libero, officia voluptates voluptatem. Est deleniti, quibusdam odio dolorum ducimus necessitatibus ipsam repudiandae possimus facilis harum beatae, impedit tempore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea officiis placeat odio dolore est repellat iure quas, temporibus ullam tenetur! Soluta animi alias consectetur delectus maxime in atque ab. Tempore!
+        Laudantium quod obcaecati tempore ipsam molestias quia quas animi, architecto aspernatur? Consectetur, quia laboriosam? Eum ipsam asperiores animi laborum porro molestiae commodi quod, delectus et. Impedit alias accusamus esse assumenda.
+        Error praesentium, aperiam aliquid natus perspiciatis autem ad id enim, ducimus minima quae molestias, eaque ipsam corrupti. Alias illum ipsam, quisquam impedit adipisci reprehenderit blanditiis! Excepturi repudiandae voluptatum consequuntur repellendus!
+        Modi illum nisi quam. Quis, voluptatem! Quo doloribus est quis nisi unde iste amet veritatis, nulla provident magni, necessitatibus, voluptatibus facere tempore distinctio perspiciatis quibusdam debitis impedit accusamus accusantium ipsam?
+        Iste unde ea at ullam tempore dolor, optio placeat voluptate nulla, vitae assumenda. Illum rem repellat quaerat, porro voluptates cumque quidem, eos, similique saepe natus delectus iste ipsum iure tempora.
+        Consectetur vero quo voluptas ratione excepturi tempora magni sed possimus quisquam cumque officia libero neque architecto, voluptatum cum quidem explicabo nobis ipsum aperiam rem. Corrupti illum fugiat culpa eaque eos!
+        Laudantium commodi, iusto veritatis praesentium, nesciunt officiis corporis in nam, itaque voluptas sed saepe iste porro ipsam ut aperiam rerum exercitationem aut ex obcaecati distinctio quidem quisquam! Maxime, culpa aut?
+        Iusto fugiat architecto ducimus ad et aliquam necessitatibus doloribus enim in facilis. Perspiciatis earum, tempore, possimus doloribus voluptate facere libero in voluptatibus, illo vero enim! Velit impedit omnis nihil ea?
+        Impedit excepturi dolorem veritatis deserunt nihil reiciendis laborum ea qui cum distinctio, illo nemo suscipit perspiciatis esse quo, vitae dolor facere! Nihil commodi labore explicabo delectus pariatur accusantium asperiores soluta.
+        Tempora commodi deleniti maxime repellat ipsum nemo laborum in laboriosam a, voluptate sapiente. Debitis molestias aspernatur mollitia expedita nesciunt nulla, labore tempora dolorum corrupti maiores eius fugiat soluta fuga ab!</p>
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+<footer class="page-footer">
+    <div>
+        <p class="text-white bg-dark text-center p-4 mx-0">Copyrights du site </p> 
+    </div>
+       
+</footer>
+</html>
