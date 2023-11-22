@@ -38,4 +38,77 @@ const myBirthday = "08.04.94"
 - egalité -> 3 == var1
 - inégalité -> var1 != 4
 - égalité strict -> 3 === var1
+- Inégalité stricte -> var 1!== "3"
+- supériorité stricte -> var2 > var1
+- supériorité -> var2 >= var1
+- Infériorité stricte -> var1 < var2
+- Infériorité -> var2 <= var 1 
+
+### Boucles
+
+## boucle while 
+
+```javascript
+let nombre = 0 ;
+while (nombre < 3){
+    console.log(nombre)
+    nombre++ // On rajoute un a chaque fois pour pas avoir une boucle à l'infini.
+}
+```
+
+## boucle Do......While
+
+```javascript
+nombre = 0;
+do {
+    console.log(nombre);
+    nombre++;
+} while(nombre < 3)
+```
+
+## Boucle For 
+
+```javascript
+for (let cpt = 0; cpt <3 ; cpt++){
+    console.log(ctp)
+};
+```
+
+## Le jeu du juste prix avec le random 
+
+```javascript
+let random = Math.floor(Math.random() *10); // le * 10 ici sert à avoir des valeurs qui vont de 0 à 10 parce que le random vaut entre 0 et 1 donc on multiplie par 10.
+console.log(random);
+
+let reponse;
+
+do {
+    reponse = Number(prompt("saisir un nombre entre 1 et 10"))
+} while (reponse !== random);
+
+
+let nombre = 0;
+
+while(nombre < 10){
+    nombre++ ;
+
+    if (nombre === 4){
+        console.log("Quatre => boucle suivante")
+        continue; // le continue sert à continuer et à passer à la boucle suivante sans prendre en considération les instructions suivante qui sont dans l'autre boucle qui est égale (=== 7)
+    }
+
+    if(nombre === 7){
+        console.log("sept => je casse la boucle avec le break") 
+        break; // Le break sert à stopper la boucle 
+    }
+
+    console.log(nombre);
+}
+
+console.log("après la boucle")
+
+```
+
+
+
 
