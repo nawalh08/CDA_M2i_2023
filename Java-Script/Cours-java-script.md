@@ -109,6 +109,32 @@ console.log("après la boucle")
 
 ```
 
+### Les tableaux 
+
+pour creer un tableau on le déclare de cette façon : 
+
+```javascript
+
+let tab = []
+let tab = Array()
+```
+
+Pour ajouter un élement dans un tableau : 
+
+```js 
+let tab = ["banane", "orange" , true, 0.5, 6 ]
+
+tab.push("pomme") // On rajoute un element à la fin du tableau
+tab.unshift("ananas") // On rajoute un élément au début 
+```
+
+Pour appeler notre tableau , on ne fait plus console.log mais on fait **console.table()**
+
+
+```js 
+let retirer = tab.pop("pomme") // On retire à la fin mais si on veut retirer un élément en particulier , dans ce cas on rajoute entre parenthèses ce qu'on souhaite supp
+let retirer2 = tab.shift("ananas")// on retire un element au début 
+```
 
 
 
