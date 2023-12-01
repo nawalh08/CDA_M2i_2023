@@ -1,0 +1,31 @@
+body {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#input-poke {
+    border-radius: 5px;
+    border: solid 1px rgb(38, 0, 255);
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#btn-pre {
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(173, 173, 236);
+    padding: 5px 5px ;
+}
+
+#btn-sui {
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(173, 173, 236);
+    padding: 5px 5px ;
+}
