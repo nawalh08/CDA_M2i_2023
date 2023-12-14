@@ -7,6 +7,7 @@ import DetailsClient from '../views/DetailsClient.vue';
 const router = createRouter({
   history : createWebHistory(),
   routes : [
+   
     {path: '/', component : Home},
     {path: '/client/:clientID' , component : DetailsClient},
   ]

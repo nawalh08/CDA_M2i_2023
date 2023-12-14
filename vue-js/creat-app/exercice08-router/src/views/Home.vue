@@ -9,15 +9,24 @@ console.log(clients);
     <p>Cliquez sur une carte affiche le nom en dessous</p>
     <p>Cliquez sur "Plus de détails" redirige vers une nouvelle page qui affiche les informations du client</p>
     <ul>
-        <div class="card" width="150px" v-for="(name) in clients">
+        <div class="card shadow p-3 mb-5 bg-body-tertiary rounded " v-for="(name) in clients">
+            <div class="card-body">
 
-            <h3 card-title>{{ name.name }}</h3>
-            <h3 card-title>{{ name.email }}</h3>
-            <h3 card-title>{{ name.phone }}</h3>
+                <!-- On récupére les données voulu dans notre tableau Clients , -->
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg-success p-2 text-dark bg-opacity-10 fs-4 ">{{ name.name }}</li>
+                    <li class="list-group-item bg-success p-2 text-dark bg-opacity-10 ">{{ name.email }}</li>
+                    <li class="list-group-item bg-success p-2 text-dark bg-opacity-10">{{ name.phone }}</li>
 
-            <RouterLink :to="`/client/${name.id}`">
-                <button class="btn btn-primary">Cliquez pour plus de détails </button>
-            </RouterLink>
+
+                   
+                        <RouterLink :to="`/client/${name.id}`">
+                            <button class="btn btn-primary mt-2">Cliquez pour plus de détails </button>
+                        </RouterLink>
+                    
+
+                </ul>
+            </div>
         </div>
     </ul>
 </template>
