@@ -1,8 +1,6 @@
 <script setup>
-const { clients } = inject('clients');
-import { inject } from 'vue';
-console.table(clients)
-console.log(clients);
+const { clients } = inject('clients'); 
+import { inject } from 'vue'; 
 </script>
 
 <template>
@@ -19,7 +17,7 @@ console.log(clients);
                     <li class="list-group-item bg-success p-2 text-dark bg-opacity-10">{{ name.phone }}</li>
 
 
-                   
+                   <!--On met en place un bouton qui nous ramène sur la page /client/${name.id}. On met un routerLink pour accéder directement à notre page en cliquant sur le bouton-->
                         <RouterLink :to="`/client/${name.id}`">
                             <button class="btn btn-primary mt-2">Cliquez pour plus de détails </button>
                         </RouterLink>

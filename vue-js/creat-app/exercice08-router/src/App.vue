@@ -7,7 +7,7 @@ import { RouterView } from 'vue-router';
   <header>
 </header>
 <main>
-<RouterView/>
+<RouterView/>  <!--Permet d'afficher dans notre vue-->
 </main>
 
 </template>
