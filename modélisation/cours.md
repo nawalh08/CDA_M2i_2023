@@ -33,3 +33,21 @@ Ensuite avant d'arriver à la base de données , on fini par le MPD qui lui repr
 | salle          |
 
 
+## Base de données non relationnelle 
+
+Pour une utilisation rapide dans une application par exemple , le mieux est de stocker les données dans la RAM qui est une base de données non relationnelle. 
+
+On utilise une base de données non relationnelle comme REDIS , qui lui va stocker les données dans la RAM en utilisant la notion de clé-valeur. 
+
+Pour utiliser Redis , on telecharge Docker. Docker c'est juste des process, qui permet de faire fonctionner redis, my sql..
+
+Pour installer Docker : On télécharge à partir de notre naviguateur, ensuite si on à l'erreur WSL , on clique sur quit et on lance un powershell en administrateur et à l'intérieur on tape : wsl --shotdown
+et on redemarre l'ordinateur et la docker est installer correctement. 
+
+## Commandes pour démarrer Redis dans un conteneur docker 
+
+```bash
+docker run -p 6379:6379 -d redis
+creer un dossier
+npm init 
+```
