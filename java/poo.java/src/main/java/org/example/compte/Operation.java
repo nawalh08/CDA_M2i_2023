@@ -1,4 +1,4 @@
-package org.example;
+package org.example.compte;
 
 public class Operation{
     private double numero;
