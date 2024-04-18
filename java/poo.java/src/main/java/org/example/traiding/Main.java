@@ -21,11 +21,11 @@ public class Main {
         // (petite à élevée) stocker ces données dans une liste de
         // transactions.
 
-        List<Transaction> transactions2011Sorted = transactions.stream()
+        List<Transaction> transactions2011 = transactions.stream()
                 .filter(transaction -> transaction.getYear() == 2011)
                 .sorted(Comparator.comparingInt(Transaction::getValue))
                 .toList();
-        transactions2011Sorted.stream().forEach(System.out::println);
+        transactions2011.stream().forEach(System.out::println);
 
         // question 2 :  Quelles sont toutes les villes uniques où les traders travaillent :
         // stocker ses données dans une liste de villes (chaîne de caractères).
@@ -44,10 +44,11 @@ public class Main {
 
         String traderNames = transactions.stream()
                 .map(transaction -> transaction.getTrader().getName())
-                .distinct()
-                .sorted()
-                .collect(Collectors.joining(", "));
-
+                .distinct() //virer les doubles
+                .sorted() // Trier par ordre
+                .collect(Collectors.joining(", ")); // séparer par des ","
+        System.out.println("question 3 : ");
+        System.out.println(traderNames);
         System.out.println();
 
     }
